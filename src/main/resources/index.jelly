@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+    This plugin allows Gumiho to trigger Jenkins builds and display their results in the Gumiho UI.
+</div>
