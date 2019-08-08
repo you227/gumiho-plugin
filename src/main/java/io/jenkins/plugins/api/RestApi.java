@@ -39,6 +39,7 @@ public class RestApi extends Api {
 		super(bean);
 	}
 	
+	//api访问地址
 	//{jenkins_host}/plugin/{plugin-name}/api/build
 	@WebMethod(operationName = "build")
 	public void doBuild(StaplerRequest req, StaplerResponse rsp) throws IOException {
