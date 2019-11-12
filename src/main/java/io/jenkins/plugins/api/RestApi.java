@@ -39,8 +39,10 @@ public class RestApi extends Api {
 		super(bean);
 	}
 	
-	//api访问地址
-	//{jenkins_host}/plugin/{plugin-name}/api/build
+	/**
+	 * api访问地址  {jenkins_host}/plugin/{plugin-name}/api/build
+	 * 方法名格式必须是 do${operationName}
+	 */
 	@WebMethod(operationName = "build")
 	public void doBuild(StaplerRequest req, StaplerResponse rsp) throws IOException {
 		BaseResult<BuildRsp> result = new BaseResult<>();
